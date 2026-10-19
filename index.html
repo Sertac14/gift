@@ -52,34 +52,34 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter",system-u
 </header>
 <section class="team" id="team"></section>
 <div class="bar" id="bar"></div>
-<p class="barnote">Toplam tahmini konuşma süresi ≈ 4:05. Kalan yaklaşık 55 saniye slayt geçişleri ve konuşmacı değişimleri için ayrıldı.</p>
+<p class="barnote">Toplam tahmini konuşma süresi ≈ 4:05. Kalan yaklaşık 55 saniye slayt geçişleri ve konuşmacı değişimi için ayrıldı.</p>
 <main id="main"></main>
 <section class="notes">
 <h3>Notlar</h3>
 <ul>
 <li>Metinler notlarınıza sadık kalındı; yalnızca konuşma akışına uyarlandı, geçiş cümleleri eklendi.</li>
 <li>Slayt 3’teki notunuz yarım görünüyordu; “sunucu ya da ajan kurulumu gerektirmez” ifadesi SecPatch için yazıldı.</li>
+<li>Ersin’in bölümü (Slayt 4–6) Havva’ya aktarıldı; aradaki konuşmacı geçişi kaldırıldı, Sertaç artık Havva’dan devralıyor.</li>
 <li>Süreler dakikada yaklaşık 130–140 kelimelik sakin bir tempoya göre hesaplandı. Prova sırasında süre tutmanızı öneririm.</li>
 </ul>
 </section>
 </div>
 <script>
-var P=[{n:"Havva HANSU",i:"H",r:"Problem ve çözüm",s:"Slayt 1–3",t:"1:05",w:65},
-{n:"Ersin TAŞÇI",i:"E",r:"Nasıl çalışıyor",s:"Slayt 4–6",t:"1:30",w:90},
+var P=[{n:"Havva HANSU",i:"H",r:"Problem, çözüm ve nasıl çalışıyor",s:"Slayt 1–6",t:"2:35",w:155},
 {n:"Sertaç ÖZBAKAN",i:"S",r:"Fayda, teknoloji, fark",s:"Slayt 7–9 + Teşekkür",t:"1:30",w:90}];
 var S=[
-{p:0,n:"1",h:"Giriş",t:"0:15",x:"Merhaba, ben Havva. Yanımda Ersin ve Sertaç var. Projemiz <b>SecPatch</b>: yapay zekâ destekli, tam otomatik siber zafiyet istihbaratı ve yama yaşam döngüsü yönetimi. Önümüzdeki 5 dakikada problemi, çözümü, nasıl çalıştığını ve sayısal faydasını anlatacağız."},
+{p:0,n:"1",h:"Giriş",t:"0:15",x:"Merhaba, ben Havva. Yanımda takım arkadaşlarım Ersin ve Sertaç var. Projemiz <b>SecPatch</b>: yapay zekâ destekli, tam otomatik siber zafiyet istihbaratı ve yama yaşam döngüsü yönetimi. Önümüzdeki 5 dakikada problemi, çözümü, nasıl çalıştığını ve sayısal faydasını anlatacağız."},
 {p:0,n:"2",h:"Problem",t:"0:25",x:"Her yıl <b>40 binden fazla</b> yeni güvenlik açığı yayımlanıyor; 2025 yılında bu sayı <b>48.185</b> oldu. IT ekipleri bunları farklı sitelerden elle takip etmek zorunda kalıyor ve bu üç soruna yol açıyor. Birincisi, <b>iş gücü kaybı ve uyarı yorgunluğu</b>. İkincisi, müdahale sürelerinin uzamasıyla <b>genişleyen risk penceresi</b>. Üçüncüsü ise <b>KVKK ve GDPR uyumunun</b> sağlanamaması."},
-{p:0,n:"3",h:"Çözüm",t:"0:25",x:"SecPatch bu problemi uçtan uca otomatikleştiriyor. Akıllı bir <b>duman dedektörü</b> düşünün: sadece alarm vermiyor, doğru itfaiyeciyi de çağırıyor ve yangın sönene kadar takip ediyor. Üstelik sunucu ya da ajan kurulumu gerektirmiyor, KVKK riski de minimum.",c:"→ Geçiş: “Peki bu sistem nasıl çalışıyor? Ersin anlatsın.”"},
-{p:1,n:"4",h:"Sistem Nasıl Çalışıyor?",t:"0:35",x:"Teşekkürler Havva. Sistem <b>üç aşamada</b> çalışıyor. Birinci adım, <b>topla</b>: NVD ve aktif zafiyet listesi CISA KEV olmak üzere iki kaynaktan saatlik otomatik tarama yapılıyor. İkinci adım, <b>analiz et</b>: yapay zekâ Türkçe özet, kritiklik ve yama önerisi üretiyor; halüsinasyonu engellemek için gerçekler hep kaynaktan alınıyor. Üçüncü adım, <b>dağıt ve izle</b>: zafiyet doğru uzmana atanıyor, e-posta, Monday ve Google Sheets olmak üzere üç kanala yazılıyor, SLA ve kapanış takip ediliyor."},
-{p:1,n:"5",h:"Özellikler",t:"0:25",x:"Özellikler iki başlıkta toplanıyor. Soldaki <b>akıllı istihbarat</b>: çok kaynaklı tarama, yapay zekâ analizi, aktif zafiyet rozeti, skorlama ve envanter eşleştirme. Sağdaki <b>tam otomatik yaşam döngüsü</b>: saatlik tarama, tekilleştirme sayesinde sıfır gürültü, otomatik atama, SLA ve durum bildirimleri. Yani insan müdahalesi gerekmiyor."},
-{p:1,n:"6",h:"Yaşam Döngüsü",t:"0:30",x:"Projenin adındaki <b>yaşam döngüsü</b> kısmı burada devreye giriyor. Her görev açıldığında kritikliğe göre bir <b>SLA</b>, yani son çözüm tarihi atanıyor. Süre aşılırsa yönetici otomatik uyarılıyor. Uzman görevi üstlenince “çalışmaya başlandı”, çözünce “çözüldü” maili gönderiliyor. Böylece “açtık da ne oldu?” sorusu ortadan kalkıyor.",c:"→ Geçiş: “Şimdi sayılara, Sertaç’a geçiyorum.”"},
-{p:2,n:"7",h:"Sayısal Fayda",t:"0:30",x:"Teşekkürler Ersin. Manuel tarama ve tasnif, bir analiste günde yaklaşık <b>iki saate</b> mal olur; biz bunu <b>sıfıra</b> indiriyoruz. Yeni bir kritik açık, günler yerine <b>en geç bir saat</b> içinde yakalanıyor. Sistemimiz şu ana kadar <b>100’den fazla</b> gerçek CVE kaydını işleyip sorumlularına atadı. Bunlar canlı veriler, iddiamızın kanıtı."},
-{p:2,n:"8",h:"Teknoloji",t:"0:25",x:"Teknoloji tarafında tamamen hazır bulut servisleri kullandık: otomasyon için <b>n8n</b>, veri için <b>NVD ve CISA KEV</b>, yapay zekâ için OpenAI uyumlu <b>RuneLab</b>, görev yönetimi için <b>Monday</b>, ölçüm için <b>Google Sheets</b>, bildirim için e-posta. Hiçbiri sunucu kurulumu gerektirmiyor; dolayısıyla maliyet ve güvenlik riski düşük."},
-{p:2,n:"9",h:"Bizi Farklı Kılan",t:"0:30",x:"Bizi farklı kılan şu: çoğu araç sadece CVE listeler. SecPatch ise “bu açık aktif istismar ediliyor mu, benim varlığımı etkiliyor mu, SLA’sı ne?” diye <b>önceliklendirir</b>; sorumlusuna atar ve <b>kapanana kadar izler</b>. Mimari genişlemeye açık: yeni bir kaynak eklemek birkaç satır."},
-{p:2,n:"★",h:"Teşekkür Slaydı",t:"0:05",x:"Teşekkürler, sorularınızı almaktan memnuniyet duyarız."}
+{p:0,n:"3",h:"Çözüm",t:"0:25",x:"SecPatch bu problemi uçtan uca otomatikleştiriyor. Akıllı bir <b>duman dedektörü</b> düşünün: sadece alarm vermiyor, doğru itfaiyeciyi de çağırıyor ve yangın sönene kadar takip ediyor. Üstelik sunucu ya da ajan kurulumu gerektirmiyor, KVKK riski de minimum.",c:"→ Geçiş: “Peki bu sistem nasıl çalışıyor?”"},
+{p:0,n:"4",h:"Sistem Nasıl Çalışıyor?",t:"0:35",x:"Sistem <b>üç aşamada</b> çalışıyor. Birinci adım, <b>topla</b>: NVD ve aktif zafiyet listesi CISA KEV olmak üzere iki kaynaktan saatlik otomatik tarama yapılıyor. İkinci adım, <b>analiz et</b>: yapay zekâ Türkçe özet, kritiklik ve yama önerisi üretiyor; halüsinasyonu engellemek için gerçekler hep kaynaktan alınıyor. Üçüncü adım, <b>dağıt ve izle</b>: zafiyet doğru uzmana atanıyor, e-posta, Monday ve Google Sheets olmak üzere üç kanala yazılıyor, SLA ve kapanış takip ediliyor."},
+{p:0,n:"5",h:"Özellikler",t:"0:25",x:"Özellikler iki başlıkta toplanıyor. Soldaki <b>akıllı istihbarat</b>: çok kaynaklı tarama, yapay zekâ analizi, aktif zafiyet rozeti, skorlama ve envanter eşleştirme. Sağdaki <b>tam otomatik yaşam döngüsü</b>: saatlik tarama, tekilleştirme sayesinde sıfır gürültü, otomatik atama, SLA ve durum bildirimleri. Yani insan müdahalesi gerekmiyor."},
+{p:0,n:"6",h:"Yaşam Döngüsü",t:"0:30",x:"Projenin adındaki <b>yaşam döngüsü</b> kısmı burada devreye giriyor. Her görev açıldığında kritikliğe göre bir <b>SLA</b>, yani son çözüm tarihi atanıyor. Süre aşılırsa yönetici otomatik uyarılıyor. Uzman görevi üstlenince “çalışmaya başlandı”, çözünce “çözüldü” maili gönderiliyor. Böylece “açtık da ne oldu?” sorusu ortadan kalkıyor.",c:"→ Geçiş: “Şimdi sayılara, Sertaç’a geçiyorum.”"},
+{p:1,n:"7",h:"Sayısal Fayda",t:"0:30",x:"Teşekkürler Havva. Manuel tarama ve tasnif, bir analiste günde yaklaşık <b>iki saate</b> mal olur; biz bunu <b>sıfıra</b> indiriyoruz. Yeni bir kritik açık, günler yerine <b>en geç bir saat</b> içinde yakalanıyor. Sistemimiz şu ana kadar <b>100’den fazla</b> gerçek CVE kaydını işleyip sorumlularına atadı. Bunlar canlı veriler, iddiamızın kanıtı."},
+{p:1,n:"8",h:"Teknoloji",t:"0:25",x:"Teknoloji tarafında tamamen hazır bulut servisleri kullandık: otomasyon için <b>n8n</b>, veri için <b>NVD ve CISA KEV</b>, yapay zekâ için OpenAI uyumlu <b>RuneLab</b>, görev yönetimi için <b>Monday</b>, ölçüm için <b>Google Sheets</b>, bildirim için e-posta. Hiçbiri sunucu kurulumu gerektirmiyor; dolayısıyla maliyet ve güvenlik riski düşük."},
+{p:1,n:"9",h:"Bizi Farklı Kılan",t:"0:30",x:"Bizi farklı kılan şu: çoğu araç sadece CVE listeler. SecPatch ise “bu açık aktif istismar ediliyor mu, benim varlığımı etkiliyor mu, SLA’sı ne?” diye <b>önceliklendirir</b>; sorumlusuna atar ve <b>kapanana kadar izler</b>. Mimari genişlemeye açık: yeni bir kaynak eklemek birkaç satır."},
+{p:1,n:"★",h:"Teşekkür Slaydı",t:"0:05",x:"Teşekkürler, sorularınızı almaktan memnuniyet duyarız."}
 ];
-var K=["var(--c0)","var(--c1)","var(--c2)"],team=document.getElementById("team"),bar=document.getElementById("bar"),main=document.getElementById("main");
+var K=["var(--c0)","var(--c2)"],team=document.getElementById("team"),bar=document.getElementById("bar"),main=document.getElementById("main");
 P.forEach(function(p,i){
 team.insertAdjacentHTML("beforeend",'<div class="person" style="--c:'+K[i]+'"><div class="av">'+p.i+'</div><b>'+p.n+'</b><small>'+p.r+' · '+p.s+'</small></div>');
 bar.insertAdjacentHTML("beforeend",'<div style="--c:'+K[i]+';flex:'+p.w+'">'+p.n.split(" ")[0]+' '+p.t+'</div>');
